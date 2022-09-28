@@ -35,6 +35,9 @@ const morsecode =
 
 };
 
+const englishText = document.getElementsByID("textInput");
+const convertButton = document.getElementsByClassName ("fetch_code")[0];
+const morseText = document.getElementById("textMorse");
 
 export const convertToMorse = (word) => {
     let finalMorseCode = '';

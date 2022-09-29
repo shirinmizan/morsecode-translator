@@ -35,11 +35,11 @@ const morsecode =
 
 };
 
-const englishText = document.getElementsByID("textInput");
-const convertButton = document.getElementsByClassName ("fetch_code")[0];
-const morseText = document.getElementById("textMorse");
+const englishText = document.querySelector("#textInput");
+const convertButton = document.getElementsByClassName ("translator__button")[0];
+const morseText = document.querySelector("#textMorse");
 
-export const convertToMorse = (word) => {
+const convertToMorse = (word) => {
     let finalMorseCode = '';
 
     for(let i=0; i<word.length; i++){
@@ -48,5 +48,9 @@ export const convertToMorse = (word) => {
     return finalMorseCode;
 }
 
-console.log(convertToMorse("ABC"));
+//console.log(convertToMorse("ABC"));
+
+convertButton.addEventListener('click', (event) => {
+    morseText.value=convertToMorse(englishText.value);
+});
 

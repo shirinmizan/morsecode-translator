@@ -1,0 +1,49 @@
+
+
+*{
+
+    box-sizing: border-box;;
+}
+
+.translator{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b5838d;
+    flex-flow: column;
+    margin: 50px;
+    
+
+    .translator__input {
+            height: 100px;
+            margin-top: 50px;
+            height: 100px;
+            margin-bottom: 50px;
+            display: flex;
+            border-radius: 5px;
+            background-color: f5ebe0;
+            box-shadow: rosybrown;
+            border-radius: 5px;
+            border: 1px solid;
+            width: 70%;
+            font-family: sans-serif;
+            font-size: 2em;
+        }
+
+    .translator__button{
+            height: 50px;
+            border: none;
+            box-shadow: aquamarine;
+            background-color: #023047;
+            color: white;
+            width: 100px;
+            border-radius: 5px;
+            box-shadow: gray;
+            width: 150px;
+        }
+
+    }
